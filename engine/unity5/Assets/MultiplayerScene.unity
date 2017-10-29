@@ -639,6 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1519499980}
   - component: {fileID: 1519499981}
+  - component: {fileID: 1519499982}
   m_Layer: 0
   m_Name: Network Manager
   m_TagString: Untagged
@@ -741,6 +742,21 @@ MonoBehaviour:
   matchSize: 4
   isNetworkActive: 0
   matchMaker: {fileID: 0}
+--- !u!114 &1519499982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519499979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 227461547, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  showGUI: 1
+  offsetX: 0
+  offsetY: 0
 --- !u!1 &1529337215
 GameObject:
   m_ObjectHideFlags: 0
