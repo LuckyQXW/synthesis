@@ -343,6 +343,7 @@
     <Compile Include="Assets\BulletUnity\Scripts\SoftBody\BSoftBodyRope.cs" />
     <Compile Include="Assets\BulletUnity\Scripts\SoftBody\BSoftBodyWMesh.cs" />
     <Compile Include="Assets\BulletUnity\Scripts\SoftBody\SBSettings.cs" />
+    <Compile Include="Assets\DriveCube.cs" />
     <Compile Include="Assets\Scripts\BUExtensions\BBallSocketConstraintEx.cs" />
     <Compile Include="Assets\Scripts\BUExtensions\BHingedConstraintEx.cs" />
     <Compile Include="Assets\Scripts\BUExtensions\BMultiCallbacks.cs" />

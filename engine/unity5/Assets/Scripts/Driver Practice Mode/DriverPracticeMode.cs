@@ -181,7 +181,7 @@ public class DriverPracticeMode : MonoBehaviour {
     /// </summary>
     private void UpdateVectorConfiguration()
     {
-        if (holdCount > 0 && !isEditing) //This indicates that any of the configuration increment buttons are being pressed
+        if (holdCount >= 0 && !isEditing) //This indicates that any of the configuration increment buttons are being pressed
         {
             if (deltaOffsetX != 0)
             {

@@ -271,12 +271,12 @@ public class DriverPracticeRobot : MonoBehaviour
             if (intakeRigidBody != null && !intakeRigidBody.GetCollisionObject().IsActive)
                 intakeRigidBody.GetCollisionObject().Activate();
 
-            BRigidBody orb = objectsHeld[index][0].GetComponent<BRigidBody>();
+            BRigidBody orb = GameObject.Instantiate(objectsHeld[index][0]).GetComponent<BRigidBody>();
             orb.collisionFlags = BulletSharp.CollisionFlags.None;
             orb.velocity += releaseNode[index].transform.rotation * releaseVelocityVector[index];
             orb.angularFactor = UnityEngine.Vector3.one;
 
-            objectsHeld[index].RemoveAt(0);
+            //objectsHeld[index].RemoveAt(0);
         }
     }
 
