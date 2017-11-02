@@ -70,6 +70,9 @@ public class DriverPracticeRobot : MonoBehaviour
 
     public int controlIndex;
 
+    private GameObject bullet17;
+    private GameObject bullet42; 
+
     private void Awake()
     {
         StateMachine.Instance.Link<MainState>(this);
@@ -110,8 +113,12 @@ public class DriverPracticeRobot : MonoBehaviour
         intakeInteractor.Add(null);
         intakeInteractor.Add(null);
 
+        bullet17 = (GameObject)Resources.Load("Prefabs/42mmBullet");
+        bullet42 = (GameObject)Resources.Load("Prefabs/42mmBullet");
+
         objectsHeld = new List<List<GameObject>>();
         primaryHeld = new List<GameObject>();
+        primaryHeld.Add(bullet17);
         secondaryHeld = new List<GameObject>();
         objectsHeld.Add(primaryHeld);
         objectsHeld.Add(secondaryHeld);
